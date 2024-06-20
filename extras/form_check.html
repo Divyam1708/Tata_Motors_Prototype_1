@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #navtag {
+            text-transform: capitalize;
+        }
+        table,tr
+        {
+            border: 5px solid orange;
+        }
+    </style>
+</head>
+
+<body>
+    <marquee behavior="alternate" direction="left">
+        <h1 id="navtag">
+            creating a basic form uisng HTML.
+        </h1>
+    </marquee>
+
+    <form action="">
+
+        <table>
+            <tbody>
+                <tr style="border: 5px solid;">
+                    <td><label for="namein">Name :</label></td>
+                    <td><input type="text" id="namein" placeholder="Ab****hg" required maxlength="5" minlength="4"></td>
+                </tr>
+                <tr>
+                    <td><label for="uidin">UID :</label></td>
+                    <td> <input type="text" id="uidin" placeholder="2*BC*S1**4"></td>
+                </tr>
+                <tr>
+                    <td><label for="sectionin">Section :</label></td>
+                    <td><input type="text" id="sectionin"></td>
+                </tr>
+                <tr>
+                    <td><label for="hostelin">Hostel :</label></td>
+                    <td><input type="text" id="hostelin"></td>
+                </tr>
+                <tr>
+                    <td><label for="roomnoin">Room No. :</label></td>
+                    <td><input type="text" id="roomnoin"></td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <input type="button" value="Useless">
+        <br>
+        <br>
+        Multiple Number selector:
+        <input type="checkbox" name="multinum" id="mn1">1 bhi 
+        <input type="checkbox" name="multinum" id="mn2">2 bhi
+        <input type="checkbox" name="multinum" id="mn3">3 bhi 
+        <br>
+        <br>
+        Random Number selector:
+        <input type="radio" name="randnum" id="rn1">1
+        <input type="radio" name="randnum" id="rn2">2
+        <input type="radio" name="randnum" id="rn3">3
+        <input type="radio" name="randnum" id="rn4">4
+        <input type="radio" name="randnum" id="rn5">5
+        <br>
+        <br>
+        <input type="color" name="" id="">
+        <br>
+        <br>
+        Date:&nbsp;<input type="date" name="" id="">
+        <br>
+        <br>
+        Date-Time:&nbsp;<input type="datetime" name="" id="">
+        <br>
+        <br>
+        Date-Time-Local:&nbsp;<input type="datetime-local" name="" id="" >
+        <br>
+        <br>
+        Enter File: &nbsp;<input type="file" name="" id="">
+        <br><br>
+        <input type="range" name="" id="">
+        <br><br>
+        <input type="submit" value="Submit Now"> <input type="reset" value="Reset">
+
+        <select name="Hostel_Name" id="" aria-valuetext="Hostel_Name:">
+            <option value="ZAKIR-A">ZAKIR-A</option>
+            <option value="ZAKIR-B">ZAKIR-B</option>
+            <option value="ZAKIR-C">ZAKIR-C</option>
+            <option value="ZAKIR-D">ZAKIR-D</option>
+            <option value="N.C-1">N.C-1</option>
+            <option value="N.C-2">N.C-2</option>
+            <option value="N.C-3">N.C-3</option>
+            <option value="N.C-4">N.C-4</option>
+            <option value="N.C-5">N.C-5</option>
+            <option value="N.C-6">N.C-6</option>
+            <option value="OUTSIDER.">OUTSIDER.</option>
+        </select>
+    </form>
+</body>
+
+</html>
