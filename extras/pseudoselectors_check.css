@@ -1,0 +1,38 @@
+#main_div
+{
+    background-color: white ;
+    width: 100vw;
+}
+
+#main_div p:nth-child()
+{
+    display: inline;
+    background-color: rgb(247, 65, 19);
+
+}
+
+#main_div p:nth-last-child()
+{
+    display: inline;
+    background-color: rgb(245, 249, 6);
+    width: 100vw;
+}
+
+#main_div p:nth-of-type()
+{
+    /* display: inline;
+    background-color: rgb(176, 255, 4); */
+}
+
+#main_div p:nth-child(1)
+{
+    /* display: inline;
+    background-color: rgb(17, 86, 235); */
+}
+
+span:only-child
+{
+    display: block;
+    background-color: rgb(189, 189, 189);
+}
+
