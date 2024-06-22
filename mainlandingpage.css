@@ -1,5 +1,6 @@
 * {
     margin: 0px;
+    box-sizing: border-box;
     /* margin: auto; */
     /* background-color: #3a4141; */
 
@@ -18,10 +19,6 @@ body {
     /* position: fixed; */
 }
 
-
-
-
-
 /* Upper Main NAVIGATION Conatiner begins */
 #navigation_maincontainer {
     /* background-color: rgb(57 57 57); */
@@ -31,28 +28,12 @@ body {
     position: fixed;
     /* position: sticky; */
     top: 0;
+    margin: auto;
     width: 100%;
+    min-width: 20%;
     height: 5.8em;
     border-bottom: 1px solid black;
     z-index: 10;
-}
-
-.nav_text_colour {
-    background-color: #3a4141;
-    border: 2px solid #4e4f59;
-    color: #d2bfbf;
-}
-
-#navcontainer {
-    display: flex;
-
-}
-
-nav {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-
 }
 
 #logo_statement_container {
@@ -67,6 +48,15 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    transition: ease-in-out 1.2s;
+}
+
+#logo_statement:hover {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    transform: scale(1.1);
+    transition: ease-in-out 1.2s;
 
 }
 
@@ -77,11 +67,6 @@ nav {
     justify-content: space-between;
     transition: ease-in-out 1.2s;
 
-}
-
-#logo_statement_upper:hover {
-    flex-direction: row-reverse;
-    transition: ease-in-out 1.2s;
 }
 
 #logo_statement_upper_strong_1 {
@@ -97,19 +82,45 @@ nav {
     margin: 5px;
     padding: 5px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    transition: ease-in-out 1.2s;
 }
 
 .code_font {
     font-size: 12px;
 }
 
+nav {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 100em;
+    min-width: 40em;
+}
+
+.nav_text_colour {
+    background-color: #133434;
+    border: 1px solid #4e4f59;
+    color: #d2bfbf;
+    font: 500;
+}
+
+#navcontainer {
+    display: flex;
+    justify-content: center;
+    max-width: 46em;
+    min-width: 19em;
+}
+
+
+
 #menudiv {
-    width: 900px;
-    margin-top: 0px;
+    /* width: 50em; */
 }
 
 #navul {
     display: flex;
+    margin: -1em;
+    padding-left: 0px;
     justify-content: space-around;
 }
 
@@ -136,14 +147,13 @@ nav {
 #logoimgdiv {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: end;
     width: 160px;
 }
 
 #logoimg {
     display: inline-block;
     width: 100px;
-    display: flex;
     transition: ease-in-out 1.2s;
 
 }
@@ -151,8 +161,8 @@ nav {
 #logoimg:hover {
     /* opacity: 0.6; */
     filter: grayscale(0.51);
-    transform: scale(1.6);
-    transition: ease-in-out 1.2s;
+    transform: scale(1.2);
+    transition: ease-in-out 0.6s;
 }
 
 
@@ -174,17 +184,44 @@ nav {
 
 
 
+#extra_above_main_container
+{
+    top: 6,81em;
+    margin: auto;
+    /* width: 100%; */
+    background-color: aquamarine;
+    position: absolute;
+    z-index: 7;
+}
+#extra_above_container
+{
+    top: 6.99em;
+    position: fixed;
+    background-color: #3a4141;
+    background-color: red;
+    margin: auto;
 
+}
+#extra_video
+{
+    width: 100em;
+    position: fixed;
+    margin: auto;
+    border:5px solid #d2bfbf;
 
+}
 
 /*SIDEBAR navigation and Main Content Conatiner BEGINS here.  */
 #navigation_and_content_parent
 {
-    top: 6.99em;
+    top: 46.99em;
     margin: auto;
-    width: 90em;
+    max-width: 90em;
+    min-width: 60em;
+    background-color: #828cfa;
     height: 100vh;
     position: relative;
+    z-index: 8;
 }
 
 /* SIDEBAR navigation Conatiner BEGINS here. */
@@ -234,9 +271,30 @@ nav {
     color: #d2bfbf;
 }
 
+#range_in{
+    width: 19em;
+}
+
+.category_in
+{
+    /* display: block; */
+}
+
+#models_search_div
+{
+    display: inline-block;
+}
+.material-icons-two-tone
+{
+    transform: scale(1);
+    padding-top: 2em;
+}
+
+
 #sidebar_container::-webkit-scrollbar {
     display: none;
 }
+
 
 .submenu {
     display: none;
@@ -284,9 +342,10 @@ nav {
     position: absolute;
     justify-content: center;
     /* top: 20em; */
-    bottom: -10em;
+    bottom: -53em;
     left: 0em;
     right: 0;
+    z-index: 8;
 
 }
 #main_footer_conatiner::-webkit-scrollbar {

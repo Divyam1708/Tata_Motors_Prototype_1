@@ -10,9 +10,10 @@
     top: 0;
     left: 16.8em;
     /* bottom: 30em; */
-    width: 73.525em;
-    height: 45.95em;
-    height: 95%;
+    max-width: 73.525em;
+    min-width: 40em;
+    /* height: 45.95em; */
+    height: 100%;
     /* max-width: 137em;*/
     /*min-width: 0em; */
     /* padding-right: 10em;
@@ -22,12 +23,10 @@
     /* max-height: 100%; */
     /* min-height: 50%; */
     /* margin-bottom: 400px; */
-    /* background-color: springgreen; */
+    background-color: springgreen;
     overflow-y: auto;
     border: 2px solid yellow;
     flex-wrap: wrap;
-    z-index: 0;
-
 }
 
 #external_testing::-webkit-scrollbar {
