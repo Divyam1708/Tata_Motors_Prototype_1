@@ -1,9 +1,13 @@
 /* Main CONTENT Conatiner BEGINS here. */
 #external_testing {
     display: inline-flex;
+    /* display: grid; */
     /* display: flexbox; */
     flex-direction: column;
-    justify-content: space-around;
+    /* grid-column:auto; */
+    grid-template-columns: auto auto auto;
+    /* justify-content: space-around; */
+    justify-items:auto;
     position: absolute;
     /* position: fixed; */
     top: 5.81em;
@@ -23,7 +27,7 @@
     /* max-height: 100%; */
     /* min-height: 50%; */
     /* margin-bottom: 400px; */
-    background-color: springgreen;
+    /* background-color: springgreen; */
     overflow-y: auto;
     border: 2px solid yellow;
     flex-wrap: wrap;

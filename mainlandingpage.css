@@ -11,7 +11,7 @@
 }
 
 body {
-    background-color: rgb(91, 91, 91);
+    /* background-color: rgb(91, 91, 91); */
     height: 100%;
     overflow: scroll;
     margin: auto;
@@ -23,6 +23,7 @@ body {
 #navigation_maincontainer {
     /* background-color: rgb(57 57 57); */
     background-color: #3a4141;
+    background-color: #000000;
     display: flex;
     justify-content: space-evenly;
     position: fixed;
@@ -32,10 +33,17 @@ body {
     width: 100%;
     min-width: 20%;
     height: 5.8em;
+    height: 0em;
     border-bottom: 1px solid black;
     z-index: 10;
+    box-shadow: 0px 0px 5.8em 8.8em rgb(0, 0, 0);
+    
 }
 
+#a_logo_statement_container
+{
+    text-decoration: none;
+}
 #logo_statement_container {
     display: flex;
     flex-direction: row;
@@ -91,7 +99,7 @@ body {
 
 nav {
     display: flex;
-    justify-content: center;
+    justify-content: end;
     flex-direction: column;
     max-width: 100em;
     min-width: 40em;
@@ -99,9 +107,9 @@ nav {
 
 .nav_text_colour {
     background-color: #133434;
-    border: 1px solid #4e4f59;
+    /* border: 1px solid #4e4f59; */
     color: #d2bfbf;
-    font: 500;
+    /* font: 500; */
 }
 
 #navcontainer {
@@ -109,6 +117,7 @@ nav {
     justify-content: center;
     max-width: 46em;
     min-width: 19em;
+    height: 5.81em;
 }
 
 
@@ -120,30 +129,88 @@ nav {
 #navul {
     display: flex;
     margin: -1em;
+    padding-top: 8.5em;
     padding-left: 0px;
     justify-content: space-around;
 }
 
 #menudiv li {
-    background-color: #3a4141;
-    border: 2px solid #4e4f59;
+    /* background-color: #3a4141; */
+    background-color: #000;
+    /* border: 2px solid #4e4f59; */
     color: #d2bfbf;
     display: inline-block;
     margin: 5px;
     border-radius: 2px;
     font-size: 18px;
     transition: ease-in-out 0.5s;
+    justify-content: center;
 
 }
 
-#menudiv li:hover {
-    color: aqua;
+#menudiv ul .nav_text_colour:hover {
+    color: rgb(62, 161, 243);
     border-color: red;
     border-radius: 1px;
     transition: ease-in-out 0.4s;
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
+#organisation_nav_li_in
+{
+    display: none;
+    justify-content: center;
+    padding: 2em;
+    padding-inline: 2em;
+    top: 3.4em;
+    left: 30em;
+    border-radius: 5%;
+    width: 20em;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    transition: ease-in-out 0.2s;
+}
+
+
+#organisation_li_div:hover #organisation_nav_li_in
+{
+    display: block;
+    background-color: #ffffff;
+    position: absolute;
+    transform: scale(1);
+    transition: ease-in-out 0.2s;
+}
+
+#organisation_nav_li_in_ul
+{
+    display: flex;
+    flex-direction: column;
+    padding-left: 0px;
+    position: relative;
+}
+
+.organisation_nav_li_in_ul_style
+{
+    text-align: start;
+    background-color: white;
+    color: black;
+    width: 13.65em;
+
+}
+.organisation_nav_li_in_ul_style:hover
+{
+    border: 1px solid rgb(5, 112, 199);
+    color: rgb(5, 112, 199);
+    transform: scale(1.01);
+}
+
+.organisation_nav_li_in_ul_element_icon
+{
+    right: -6em;
+    position: relative;
+    top: 0.3em;
+    align-content: end;
+    transform: scale(0.5);
+}
 #logoimgdiv {
     display: flex;
     flex-direction: row;
@@ -186,7 +253,7 @@ nav {
 
 #extra_above_main_container
 {
-    top: 6,81em;
+    top: 6.81em;
     margin: auto;
     /* width: 100%; */
     background-color: aquamarine;
@@ -204,10 +271,11 @@ nav {
 }
 #extra_video
 {
-    width: 100em;
-    position: fixed;
+    width: 10em;
+    position: relative;
     margin: auto;
     border:5px solid #d2bfbf;
+    z-index: 6;
 
 }
 
@@ -218,7 +286,7 @@ nav {
     margin: auto;
     max-width: 90em;
     min-width: 60em;
-    background-color: #828cfa;
+    /* background-color: #828cfa; */
     height: 100vh;
     position: relative;
     z-index: 8;
@@ -233,8 +301,7 @@ nav {
     /* margin-top: 5.81em; */
     position: relative;
     height: 45.94em;
-    /* background-color: cornflowerblue; */
-    background-color: #3a4141;
+    /* background-color: #3a4141; */
     overflow: auto;
     border: 2px solid tomato;
 
@@ -261,7 +328,7 @@ nav {
     list-style: none;
     margin-left: -18.5%;
     text-decoration: none;
-    background-color: #3a4141;
+    /* background-color: #3a4141; */
     color: #d2bfbf;
 
 }
@@ -272,7 +339,7 @@ nav {
 }
 
 #range_in{
-    width: 19em;
+    width: 18em;
 }
 
 .category_in
@@ -282,12 +349,22 @@ nav {
 
 #models_search_div
 {
-    display: inline-block;
+    display: block;
+    /* background-color: pink; */
+    height: 1.5em;
 }
-.material-icons-two-tone
+
+#models_search
 {
-    transform: scale(1);
-    padding-top: 2em;
+    /* height: 2em; */
+    width: 15em;
+    position: relative;
+    top: -10px;
+}
+#models_search_btn{
+    transform: scale(0.61);
+    position: relative;
+    top: -4px;
 }
 
 
