@@ -1,0 +1,13 @@
+#content_container{
+    display: inline-flex;
+    position: absolute;
+    top: 0em;
+    left: 16.4em;
+    background-color: rgb(222, 249, 20);
+    border: 5px solid;
+    /* max-width: 70em; */
+    /* min-width: 20em; */
+    width: 73.5em;
+    height: 50vw;
+
+}
